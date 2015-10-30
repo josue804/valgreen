@@ -8,6 +8,15 @@
 </head>
 <body>
 
+<nav>
+  <div class="nav-wrapper">
+    <%= link_to "Valgreen Painting", pages_path, class: "brand-logo", style: "margin-left: 10px;" %>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><%= link_to "Something, maybe", contact_path %></li>
+    </ul>
+  </div>
+</nav>
+
 <%= yield %>
 
 </body>
