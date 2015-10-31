@@ -8,29 +8,26 @@ $primary-color: color("green") !default;
 @import "materialize/extras/nouislider";
 
 .jv-index {
-  background: url('house.jpeg') no-repeat center center fixed;
+  background: url('house2.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100%;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
-html, body {
+html{
   margin: 0 !important;
   padding: 0 !important;
   height: 100%;
-  overflow: hidden;
 }
 
 .circle-text {
-    width:50%;
+    width:45%;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-
+    transition: box-shadow 1s ease;
 }
 .circle-text:after {
     content: "";
@@ -38,12 +35,13 @@ html, body {
     width: 100%;
     height:0;
     padding-bottom: 100%;
-    background: #4679BD;
+    @extend .green;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     text-align: center;
     float: none;
+    border: 1px #43a047 solid;
 }
 .circle-text div {
     float:left;
@@ -63,6 +61,16 @@ html, body {
 .jv-link {
   height: 100%;
   width: 100%;
+}
+
+.jv-text {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+@media (min-width: 5px) and (max-width: 500px) {
+
 }
 
 .valign-wrapper {
