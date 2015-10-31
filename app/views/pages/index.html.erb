@@ -2,27 +2,27 @@
   <div class="row">
     <div class="col s4">
       <div class="valign-wrapper">
-        <div class="circle-text">
+        <div class="circle-text jv-hoverable">
           <div>
-            Yah
+            <%= link_to "About Us", about_path %>
           </div>
         </div>
       </div>
     </div>
     <div class="col s4">
       <div class="valign-wrapper">
-        <div class="circle-text">
+        <%= link_to gallery_path, class: "circle-text jv-hoverable" do %>
           <div>
-            Yah
+            Our Work
           </div>
-        </div>
+        <% end %>
       </div>
     </div>
     <div class="col s4">
       <div class="valign-wrapper">
-        <div class="circle-text">
+        <div class="circle-text jv-hoverable">
           <div>
-            Yah
+            <%= link_to "Need Paint?", new_request_path %>
           </div>
         </div>
       </div>
