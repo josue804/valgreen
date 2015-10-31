@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'sqlite3'
 gem 'devise'
+gem "paperclip", "~> 4.3"
 
 group :development do
   gem 'byebug'
