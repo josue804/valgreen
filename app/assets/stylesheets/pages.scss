@@ -23,12 +23,13 @@ html{
 }
 
 .circle-text {
-    width:45%;
+    width:55%;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
     transition: box-shadow 1s ease;
 }
+
 .circle-text:after {
     content: "";
     display: block;
@@ -66,17 +67,21 @@ html{
 .jv-text {
   font-family: 'Oxygen', sans-serif;
   font-weight: 700;
-  font-size: 25px;
+  // font-size: 3vmin;
 }
 
-@media (min-width: 5px) and (max-width: 500px) {
+@media (max-width: 992px) {
+  .row, .col{
+    height: 60%;
+  }
+}
 
+@media (min-width: 993px){
+  .row, .col{
+    height: 90%;
+  }
 }
 
 .valign-wrapper {
   height: 100%;
-}
-
-.row, .col, .s4 {
-  height: 90%;
 }
