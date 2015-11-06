@@ -13,14 +13,25 @@ $primary-color: color("green") !default;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-html{
-  margin: 0 !important;
-  padding: 0 !important;
-  height: 100%;
+nav {
+  position: fixed;
 }
+
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-height: 100%;
+}
+
+// html{
+//   margin: 0 !important;
+//   padding: 0 !important;
+//   height: 100%;
+// }
 
 .circle-text {
     width:55%;

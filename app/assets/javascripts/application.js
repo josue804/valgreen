@@ -17,5 +17,6 @@
 //= require_tree .
 //= require materialize/extras/nouislider
 //= require fittext
+//= require turbolinks
 
 jQuery(".jv-text").fitText();

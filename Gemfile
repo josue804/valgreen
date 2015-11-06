@@ -12,6 +12,7 @@ gem 'sqlite3'
 gem 'devise'
 gem "paperclip", "~> 4.3"
 gem 'fittextjs_rails'
+gem 'jquery-turbolinks'
 
 group :development do
   gem 'byebug'
