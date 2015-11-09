@@ -17,5 +17,3 @@
 //= require_tree .
 //= require materialize/extras/nouislider
 //= require fittext
-
-jQuery(".jv-text").fitText();

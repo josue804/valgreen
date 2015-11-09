@@ -1,0 +1,30 @@
+@import "materialize/components/color";
+
+
+
+input[type=text], input[type=password],
+input[type=email], input[type=url],
+input[type=time], input[type=date],
+input[type=datetime-local], input[type=tel],
+input[type=number], input[type=search],
+textarea.materialize-textarea {
+  color: #333 !important;
+  border-bottom: 1px solid #4caf50 !important;
+}
+
+input[type=text]:focus:not([readonly]), textarea:focus:not([readonly]) {
+  box-shadow: 0 1px 0 0 #4caf50 !important;
+}
+
+.input-field label, .input-field label.active {
+  color: #333 !important;
+}
+
+.btn {
+  @extend .green;
+}
+
+body {
+  background-color: #555;
+  color: white;
+}
