@@ -7,6 +7,11 @@
 @import "bootstrap";
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 
+// Variables
+  $primary: #333;
+  $green: #33b53d;
+  $green-light: #5cc464;
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box; box-sizing: border-box;
 }
@@ -15,4 +20,23 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Oswald', sans-serif;
+}
+
+a {
+  transition: all 0.4s;
+}
+
+.navbar {
+  border-bottom: transparent;
+  height: 10rem;
+}
+.navbar-default {
+  background: transparent;
+}
+
+#logo img{
+  width: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

@@ -1,5 +1,13 @@
-<div id="splash-image">
-</div>
+<div id="splash-image-desat" class="splash"></div>
+<div id="splash-image-sat" class="splash"></div>
 <div class="header">
   <div class="header-title">VALGREEN PAINTING</div>
+  <div class="header-tag">painting your stuff since 1984</div>
 </div>
+
+<script type="text/javascript">
+  $(function() {
+    $("#splash-image-desat").delay(1000).fadeOut(7000);
+    $("#splash-image-sat").delay(1000).fadeIn(7000);
+  })
+</script>

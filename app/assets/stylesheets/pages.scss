@@ -1,8 +1,11 @@
+// Variables
+  $primary: #333;
+  $green: #33b53d;
+  $green-light: #5cc464;
 
 // Index Page
 
-#splash-image {
-  background-image: url('house-desat.png');
+.splash {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -15,15 +18,34 @@
   z-index: -1;
 }
 
+#splash-image-desat {
+  background-image: url('house-desat.png');
+}
+#splash-image-sat {
+  background-image: url('house-sat.png');
+  display: none;
+}
+
 .header {
   z-index: 10000;
   text-align: center;
-  background: rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.95);
+  // border: 5px solid $green-light;
   color: #333;
   width: 60%;
   display: block;
-  margin: 15% auto auto auto;
+  margin: 10% auto auto auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
   .header-title {
     font-size: 7rem;
   }
+  .header-tag {
+    font-size: 3.5rem;
+    font-family: 'Lobster Two', cursive;
+  }
+}
+
+.green {
+  color: $green;
 }
