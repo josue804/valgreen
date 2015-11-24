@@ -9,16 +9,21 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-fixed-top navbar-default" id="navbar">
   <div class="container-fluid">
     <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
       <a class="navbar-brand" id="logo" href="/"><%= image_tag 'valgreen' %></a>
     </div>
-    <div>
+    <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Page 1</a></li>
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Request</a></li>
       </ul>
     </div>
   </div>
@@ -27,6 +32,17 @@
 <div class="container-fluid site-wrapper">
   <%= yield %>
 </div>
+
+<script type="text/javascript">
+  var screenHeight = window.innerHeight
+  $(window).scroll(function() {
+    if (window.scrollY > (screenHeight-50)) {
+      document.getElementById("navbar").style.background = "rgba(255,255,255,0.9)";
+    } else {
+      document.getElementById("navbar").style.background = "transparent";
+    }
+  });
+</script>
 
 </body>
 </html>
