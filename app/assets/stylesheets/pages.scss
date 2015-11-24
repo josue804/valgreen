@@ -1,113 +1,29 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-@import "materialize";
-@import "materialize/components/color";
-$primary-color: color("green") !default;
-@import 'materialize';
-@import "materialize/extras/nouislider";
 
-.jv-index {
-  background: url('house2.jpeg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+// Index Page
+
+#splash-image {
+  background-image: url('house-desat.png');
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  background-position: 50% 50%;
   overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 
-nav {
-  position: fixed;
-}
-
-html, body {
-    margin: 0 !important;
-    padding: 0 !important;
-    max-height: 100%;
-}
-
-// html{
-//   margin: 0 !important;
-//   padding: 0 !important;
-//   height: 100%;
-// }
-
-.circle-text {
-    width:55%;
-    margin-top: 40%;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    transition: box-shadow 1s ease;
-}
-
-.circle-text:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height:0;
-    padding-bottom: 100%;
-    background-color: rgba(76, 175,	80, 0.8);
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    text-align: center;
-    float: none;
-    border: 1px #43a047 solid;
-}
-.circle-text div {
-    float:left;
-    width:100%;
-    padding-top:50%;
-    line-height:1em;
-    margin-top:-0.5em;
-    text-align:center;
-    color:white;
-}
-
-.jv-hoverable {
-  @extend .hoverable;
-  border-radius: 50%;
-}
-
-.jv-link {
-  height: 100%;
-  width: 100%;
-}
-
-.jv-text {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  // font-size: 3vmin;
-}
-
-.logo-text {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 900;
-  font-size: 50px;
-  color: white;
-  margin-left: 8%;
-  // font-size: 3vmin;
-}
-
-html, body {
-    font-family: 'Raleway', sans-serif;
-}
-
-@media (max-width: 992px) {
-  .jv-row, .col{
-    height: 60%;
+.header {
+  z-index: 10000;
+  text-align: center;
+  background: rgba(255,255,255,0.8);
+  color: #333;
+  width: 60%;
+  display: block;
+  margin: 15% auto auto auto;
+  .header-title {
+    font-size: 7rem;
   }
-}
-
-@media (min-width: 993px){
-  .jv-row  , .col{
-    height: 90%;
-  }
-}
-
-.valign-wrapper {
-  height: 100%;
 }

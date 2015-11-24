@@ -38,9 +38,15 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.3.8)
     arel (6.0.3)
+    autoprefixer-rails (6.0.3)
+      execjs
+      json
     bcrypt (3.1.10)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-sass (3.3.5.1)
+      autoprefixer-rails (>= 5.0.0.1)
+      sass (>= 3.3.0)
     builder (3.2.2)
     byebug (6.0.2)
     capybara (2.5.0)
@@ -91,8 +97,6 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
-    materialize-sass (0.97.1)
-      sass (~> 3.3)
     method_source (0.8.2)
     mime-types (2.6.2)
     mimemagic (0.3.0)
@@ -203,6 +207,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass (~> 3.3.5)
   byebug
   capybara
   coffee-rails
@@ -211,7 +216,6 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   launchy
-  materialize-sass
   paperclip (~> 4.3)
   pg
   pry

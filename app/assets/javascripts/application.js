@@ -12,10 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require materialize-sprockets
+//= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
-//= require materialize/extras/nouislider
 //= require fittext
 //= require turbolinks
 
