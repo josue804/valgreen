@@ -7,7 +7,13 @@
 <div class="splash-buttons">
   <%= link_to 'Request a Job', contact_path, class:"btn btn-primary" %>
 </div>
-<div id="gallery">
+<div id="portfolio">
+  <%= render 'portfolio' %>
+</div>
+<div id="about">
+
+</div>
+<div id="request">
 
 </div>
 
@@ -16,4 +22,32 @@
     $("#splash-image-desat").delay(1000).fadeOut(7000);
     $("#splash-image-sat").delay(1000).fadeIn(7000);
   })
+</script>
+
+<script type="text/javascript">
+  $(".portfolio-gallery").slick({
+    speed: 300,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow:'<a class="btn btn-arrows">></a>',
+    prevArrow:'<a class="btn btn-arrows"><</a>',
+    appendArrows: $(".arrows"),
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+    ]
+  });
 </script>

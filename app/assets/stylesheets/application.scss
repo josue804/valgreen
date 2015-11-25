@@ -64,11 +64,24 @@ a {
 }
 .navbar-default {
   background: transparent;
+  .navbar-nav {
+    margin-top: 2%;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
 }
 
-#logo img{
+#logo {
   width: 10rem;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+#logo2 {
+  width: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
 }
