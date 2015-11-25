@@ -210,9 +210,6 @@
 }
 
 // New Request Form
-#new-request-form {
-}
-
 .form-control {
   border-radius: 0px !important;
 }
@@ -238,5 +235,18 @@ textarea {
   &:hover {
     color: #fff !important;
     background: $green-light;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-gallery {
+    margin-top: 30% ;
+  }
+  .info-card {
+    width: 100%;
+    margin-top: 30%;
+  }
+  #new-request-form {
+    width: 100%;
   }
 }

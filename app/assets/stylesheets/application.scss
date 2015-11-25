@@ -82,6 +82,34 @@ a.active {
   }
 }
 
+// Hamburger on Mobile
+
+.navbar-default .navbar-toggle {
+  border: transparent;
+  margin-top: 2.5rem;
+  background: transparent;
+  &:hover, &:focus, &:active {
+    background: transparent;
+  }
+  .icon-bar {
+    width: 33px;
+    height: 4px;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar-default {
+    a {
+      background: #333;
+      color: #e7e7e7;
+    }
+  }
+  .collapse {
+    margin-top: 20px;
+  }
+}
+
 #logo {
   width: 10rem;
   position: absolute;
