@@ -75,6 +75,13 @@ a.active {
   }
 }
 
+.navbar-default .navbar-nav > li > a {
+  &:hover {
+    color: #fff;
+    background: #333;
+  }
+}
+
 #logo {
   width: 10rem;
   position: absolute;

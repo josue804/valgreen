@@ -1,6 +1,6 @@
-<div class="form-card">
-
+<div id="new-request-form">
   <%= form_for @request do |f| %>
+    <h3 class="center">NEW REQUEST</h3>
     <div class="input-field col-md-12">
       <%= f.label :name %>
       <%= f.text_field :name, class: "form-control" %>
@@ -25,9 +25,8 @@
       <%= f.label :description %>
       <%= f.text_area :description %>
     </div>
-
-    <%= f.submit "Submit Request", class: "btn", style: "margin-left: 1%;" %>
+    <div class="submit-btn-wrapper">
+      <%= f.submit "Submit Request", class: "btn btn-form" %>
+    </div>
   <% end %>
-</div>
-</div>
 </div>
