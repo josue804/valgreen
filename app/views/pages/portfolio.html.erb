@@ -1,0 +1,46 @@
+<div id="portfolio-bg" class="background"></div>
+
+<div class="portfolio-gallery">
+  <%= image_tag 'hous1-compressor' %>
+  <%= image_tag 'hous2-compressor' %>
+  <%= image_tag 'hous3' %>
+  <%= image_tag 'hous4-compressor' %>
+  <%= image_tag 'hous5' %>
+  <%= image_tag 'hous6' %>
+</div>
+<div class="arrows">
+
+</div>
+
+<script type="text/javascript">
+  $(".portfolio-gallery").slick({
+    speed: 300,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow:'<a class="btn btn-arrows">></a>',
+    prevArrow:'<a class="btn btn-arrows"><</a>',
+    appendArrows: $(".arrows"),
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+    ]
+  });
+</script>
+
+<script type="text/javascript">
+  $("#logo").hide();
+  $("#logo2").show();
+</script>

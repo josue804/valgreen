@@ -7,7 +7,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
 
 <nav class="navbar navbar-fixed-top navbar-default" id="navbar">
   <div class="container-fluid">
@@ -22,9 +22,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Request</a></li>
+        <li><a class="<%= 'active' if current_page?(portfolio_path) %>" href="/portfolio">Portfolio</a></li>
+        <li><a class="<%= 'active' if current_page?(about_path) %>" href="/about">About</a></li>
+        <li><a class="<%= 'active' if current_page?(contact_path) %>" href="#">Request</a></li>
       </ul>
     </div>
   </div>
@@ -33,19 +33,6 @@
 <div class="container-fluid site-wrapper">
   <%= yield %>
 </div>
-
-<script type="text/javascript">
-  var screenHeight = window.innerHeight
-  $(window).scroll(function() {
-    if (window.scrollY > (screenHeight-30)) {
-      $("#logo").hide();
-      $("#logo2").show();
-    } else if (window.scrollY < (screenHeight-30)) {
-      $("#logo2").hide();
-      $("#logo").show();
-    }
-  });
-</script>
 
 </body>
 </html>

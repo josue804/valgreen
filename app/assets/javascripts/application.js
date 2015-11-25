@@ -17,5 +17,3 @@
 //= require_tree .
 //= require fittext
 //= require turbolinks
-
-jQuery(".jv-text").fitText();
